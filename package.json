@@ -7,8 +7,8 @@
   },
   "node-red": {
     "nodes": {
-      "custom-postgres": "./src/nodes/custom-postgres.js",
-      "lower-case": "./src/nodes/lower-case.js"
+      "custom-postgres": "./src/nodes/custom-postgres/custom-postgres.js",
+      "lower-case": "./src/nodes/lower-case/lower-case.js"
     }
   },
   "keywords": [],
