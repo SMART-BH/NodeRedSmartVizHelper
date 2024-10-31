@@ -1,0 +1,21 @@
+{
+  "name": "noderedsmartvizhelper",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "node-red": {
+    "nodes": {
+      "custom-postgres": "./src/nodes/custom-postgres.js",
+      "lower-case": "./src/nodes/lower-case.js"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "pg": "^8.13.1"
+  }
+}
