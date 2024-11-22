@@ -29,10 +29,10 @@ module.exports = function(RED) {
                 await client.connect(); // Connect to the database
 
                 // Use msg.payload.query as the SQL query (make sure to sanitize it in production)
-                const result = await client.query(msg.payload.query, msg.payload.values || []);
+                const result = await client.query(msg.payload.postgres.query, msg.payload.postgres.values || []);
 
                 // Return query results in msg.payload
-                msg.payload = result.rows;
+                msg.payload.postgres.result = result.rows;
 
                 send(msg); // Send the result to the next node in the flow
             } catch (error) {
